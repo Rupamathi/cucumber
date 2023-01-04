@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5643571000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launchUrl()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "the user enter in gmailsigin page",
+        "description": "",
+        "id": "user-authentication;the-user-enter-in-gmailsigin-page",
+        "after": [
+          {
+            "result": {
+              "duration": 30200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.exist()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8677738800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "StepDefinition.theUserIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5476850000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user inputs the correct email address onedim list",
+            "match": {
+              "location": "StepDefinition.the_user_inputs_the_correct_email_address_onedim_list(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rupamathiekambaram",
+                  "1234576",
+                  "rupayuva"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5093279400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user inputs the correct password",
+            "match": {
+              "location": "StepDefinition.the_user_inputs_the_correct_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81522600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks the Login button",
+            "match": {
+              "location": "StepDefinition.theUserClicksTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22636785700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should be authenticated",
+            "match": {
+              "location": "StepDefinition.theUserShouldBeAuthenticated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 303872800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should be presented with a success message",
+            "match": {
+              "location": "StepDefinition.theUserShouldBePresentedWithASuccessMessage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9492735500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launchUrl()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "I am user of facebooks",
+        "description": "",
+        "id": "user-authentication;i-am-user-of-facebooks;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 20800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.exist()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5885473700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am in facebook login page",
+            "match": {
+              "location": "StepDefinition.i_am_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81177000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter unvalid username as \"rupamathi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rupamathi\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.i_enter_unvalid_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5089660600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter the unvalid password \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.iEnterTheUnvalidPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5079042600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should not be redirected to the home page of facebook",
+            "match": {
+              "location": "StepDefinition.i_should_not_be_redirected_to_the_home_page_of_facebook()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Authentication",
+    "description": "",
+    "id": "user-authentication",
+    "keyword": "Feature",
+    "uri": "src/test/resources/mobilesearch/search.feature",
+    "tags": []
+  }
+]
